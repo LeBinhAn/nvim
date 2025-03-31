@@ -2,35 +2,32 @@ return {
   {
     "folke/tokyonight.nvim",
     opts = {
-      transparent = true,
-      styles = {
-        sidebars = "transparent",
-        floats = "transparent",
-      },
+      -- transparent = true,
+      -- styles = {
+      --   sidebars = "transparent",
+      --   floats = "transparent",
+      -- },
     },
   },
-  --[[{
+  {
     "rebelot/kanagawa.nvim",
-    lazy = false,
-    config = function()
-      vim.cmd("colorscheme kanagawa-lotus")
-    end,
+    lazy = true,
   },
   {
     "ellisonleao/gruvbox.nvim",
-    config = function()
-      vim.o.background = "dark"
-      vim.cmd("colorscheme gruvbox")
+    lazy = true,
+    priority = 1000,
+    config = true,
+    opts = function(_, opts)
+      opts.background = "dark"
     end,
-    opts = {
-      background = "dark",
-    },
-  },]]
-  --
+  },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight",
+      -- colorscheme = "tokyonight",
+      -- colorscheme = "gruvbox",
+      colorscheme = "kanagawa-wave",
     },
   },
 }

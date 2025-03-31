@@ -19,6 +19,7 @@ return {
       ["markdown.mdx"] = { "prettier" },
       ["graphql"] = { "prettier" },
       ["handlebars"] = { "prettier" },
+      ["svg"] = { "prettier" },
     },
   },
 }
