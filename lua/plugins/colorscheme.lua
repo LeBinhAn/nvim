@@ -19,15 +19,16 @@ return {
     priority = 1000,
     config = true,
     opts = function(_, opts)
+      -- opts.transparent_mode = true
       opts.background = "dark"
     end,
   },
   {
     "LazyVim/LazyVim",
     opts = {
-      -- colorscheme = "tokyonight",
+      colorscheme = "tokyonight",
       -- colorscheme = "gruvbox",
-      colorscheme = "kanagawa-wave",
+      -- colorscheme = "kanagawa-wave",
     },
   },
 }
